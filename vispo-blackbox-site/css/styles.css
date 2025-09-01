@@ -27,8 +27,8 @@ a:hover{opacity:.85}
 .nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:.9rem 1rem;background:rgba(0,0,0,.7);backdrop-filter:blur(6px)}
 .nav .logo{height:48px;opacity:.95}
 .nav .logo.large{height:64px;}
-.nav nav a{margin-left:1rem;color:var(--muted)}
-.nav nav a.active,.nav nav a:hover{color:var(--text)}
+.nav nav a{margin-left:1rem;color:var(--muted);padding:.7rem 1rem;border-radius:10px;border:1px solid transparent;transition: all 0.2s ease}
+.nav nav a.active,.nav nav a:hover{color:var(--text);background:#111;border-color:#333}
 
 /* Hero */
 .hero{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;max-width:1200px;margin:0 auto;padding:clamp(2rem,6vw,6rem) 1rem 2rem}
@@ -62,6 +62,8 @@ a:hover{opacity:.85}
 /* Footer */
 .footer{display:flex;gap:1rem;align-items:center;justify-content:center;padding:1rem;border-top:1px solid var(--accent);background:#000}
 .footer .logo.small{height:20px;opacity:.75}
+.footer a{color:var(--muted);padding:.4rem .8rem;border-radius:6px;border:1px solid transparent;transition:all 0.2s ease}
+.footer a:hover{color:var(--text);background:#111;border-color:#333}
 
 /* Responsive */
 @media (max-width:980px){
