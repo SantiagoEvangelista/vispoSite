@@ -32,7 +32,7 @@ a:hover{opacity:.85}
 
 /* Hero */
 .hero{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;max-width:1200px;margin:0 auto;padding:clamp(2rem,6vw,6rem) 1rem 2rem}
-.copy .slogan{font-size:clamp(1.6rem,4.5vw,4rem);margin:0 0 .4rem;font-weight:600;letter-spacing:0.02em;line-height:1.2}
+.copy .slogan{font-size:clamp(1.6rem,4.5vw,4rem);margin:0 0 .4rem;font-weight:600;letter-spacing:0.02em;line-height:1.2;font-style:italic}
 .copy .domains{margin:0;color:var(--muted);font-weight:400;letter-spacing:0.02em}
 
 .visual{position:relative;margin:0}
@@ -64,6 +64,13 @@ a:hover{opacity:.85}
 .footer .logo.small{height:20px;opacity:.75}
 .footer a{color:var(--muted);padding:.4rem .8rem;border-radius:6px;border:1px solid transparent;transition:all 0.2s ease}
 .footer a:hover{color:var(--text);background:#111;border-color:#333}
+
+/* Features */
+.features{max-width:1200px;margin:4rem auto;padding:0 1rem}
+.features h2{font-weight:600;color:var(--text);margin:0 0 2rem;font-size:clamp(1.5rem,3vw,2.5rem);text-align:center;letter-spacing:0.02em;line-height:1.2}
+.features ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;justify-items:start}
+.features li{color:var(--text);font-weight:400;font-size:1.1rem;line-height:1.6;padding-left:1.5rem;position:relative}
+.features li:before{content:'•';position:absolute;left:0;color:var(--accent);font-size:1.5rem;line-height:1;top:0}
 
 /* Responsive */
 @media (max-width:980px){
